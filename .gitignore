@@ -1,6 +1,4 @@
-.gitignore
 node_modules/
-.idea/
 ./ToolTest/build/
 ./ToolTest/config/
 ./ToolTest/index.html
