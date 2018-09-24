@@ -1,4 +1,4 @@
-export enum Color {
+ export enum Color {
   ///  颜色名	十六进制颜色值	颜色
   AliceBlue	= 0xF0F8FF	, // rgb(240, 248, 255)
   AntiqueWhite	= 0xFAEBD7	, // rgb(250, 235, 215)
