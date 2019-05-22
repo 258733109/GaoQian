@@ -1,5 +1,6 @@
 import {Color} from './Utils/Color';
 import * as PIXI from 'pixi.js';
+import * as THREE from 'three';
 
 export class Scene2D {
   public static getInstance(): Scene2D {
@@ -82,10 +83,8 @@ export class Scene2D {
   }
 
   private TEST() {
-    this.drawLine({x: 100, y: 100}, {x: 200, y: 100});
-    this.drawLine({x: 200, y: 100}, {x: 200, y: 200});
-    this.drawLine({x: 200, y: 200}, {x: 100, y: 200});
-    this.drawLine({x: 100, y: 200}, {x: 100, y: 100});
+    const scene = new THREE.Scene();
+    const v3 = new THREE.Vector2(1, 1);
   }
   private drawLine(start, end) {
     const line = new PIXI.Graphics();
