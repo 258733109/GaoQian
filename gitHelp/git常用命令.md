@@ -1,35 +1,35 @@
-# **git³£ÓÃÃüÁî**
-git branch -vv ²é¿´Á´½Ó
-git branch --set-upstream-to=origin/hotfix/lianbo ½¨Á¢Á´½Ó
-git branch -r ²é¿´Ô¶³Ì·ÖÖ§
+# **gitå¸¸ç”¨å‘½ä»¤**
 
-git push origin hotfix/lianbo:hotfix/lianbo ÍÆËÍ±¾µØ·ÖÖ§µ½Ô¶³Ì
-git push --set-upstream origin feature/wallquickdrag  ÍÆËÍ±¾µØ·ÖÖ§µ½Ô¶³Ì
++ git branch -vv æŸ¥çœ‹é“¾æ¥
++ git branch --set-upstream-to=origin/hotfix/lianbo å»ºç«‹é“¾æ¥
++ git branch -r æŸ¥çœ‹è¿œç¨‹åˆ†æ”¯
 
-git push origin -D <BranchName> É¾³ıÔ¶³Ì·ÖÖ§
-git merge --no-ff mater ºÏ²¢master
-git reflog --date=local | grep feature/cornerMerge@lianbo ²é¿´µ±Ç°·ÖÖ§ÊÇ´ÓÄÄ¸ö·ÖÖ§·Ö³öÀ´µÄ
++ git push origin hotfix/lianbo:hotfix/lianbo æ¨é€æœ¬åœ°åˆ†æ”¯åˆ°è¿œç¨‹
++ git push --set-upstream origin feature/wallquickdrag  æ¨é€æœ¬åœ°åˆ†æ”¯åˆ°è¿œç¨‹
++ git push origin -D *BranchName* åˆ é™¤è¿œç¨‹åˆ†æ”¯
++ git merge --no-ff mater åˆå¹¶master
++ git reflog --date=local | grep feature/cornerMerge@lianbo æŸ¥çœ‹å½“å‰åˆ†æ”¯æ˜¯ä»å“ªä¸ªåˆ†æ”¯åˆ†å‡ºæ¥çš„
 
++ git push origin --delete <BranchName>  åˆ é™¤æœ¬åœ°åˆ†æ”¯
++ git checkout -b develop origni/develop æ£€å‡ºè¿œç¨‹åˆ†æ”¯åˆ°æœ¬åœ°
 
-git push origin --delete <BranchName>  É¾³ı±¾µØ·ÖÖ§
-git checkout -b develop origni/develop ¼ì³öÔ¶³Ì·ÖÖ§µ½±¾µØ
++ git stash save "" å‚¨å­˜
++ git stash apply stash@{0} // å–å‡ºå‚¨å­˜çš„ç¬¬ä¸€æ¡
 
-git stash save "" ´¢´æ
-git stash apply stash@{0} // È¡³ö´¢´æµÄµÚÒ»Ìõ
++ git reset --hard 75c26377 å›æ»šåˆ°ä¸€ä¸ªç‰ˆæœ¬
++ git å•ä¸ªæ–‡ä»¶å›æ»šåˆ°æŸä¸ªç‰ˆæœ¬  
+    1ã€git log WallHide.ts  
+    2ã€git checkout 6530c1358d1a0b66e9f5cf6106873431ddcec6c9 WallHide.ts
 
-git reset --hard 75c26377 »Ø¹öµ½Ò»¸ö°æ±¾
-git µ¥¸öÎÄ¼ş»Ø¹öµ½Ä³¸ö°æ±¾
-1¡¢git log WallHide.ts
-2¡¢git checkout 6530c1358d1a0b66e9f5cf6106873431ddcec6c9 WallHide.ts
+**+ gité”™è¯¯å¤„ç†**
 
+    + Gitæ“ä½œçš„è¿‡ç¨‹ä¸­çªç„¶æ˜¾ç¤ºAnother git process semms to be running in this repository, e.g. an editor opened by â€˜git commitâ€™. Please make sure all processes are terminated then try again. If it still fails, a git process remove the file manually to continueâ€¦
+    rm -f .git/index.lock // åˆ é™¤index.lockæ–‡ä»¶
 
++ Chrome æŠ¤çœ¼å‘½ä»¤
 
-git´íÎó´¦Àí£»
+    ```
 
-1 ¡¢Git²Ù×÷µÄ¹ı³ÌÖĞÍ»È»ÏÔÊ¾Another git process semms to be running in this repository, e.g. an editor opened by ¡®git commit¡¯. Please make sure all processes are terminated then try again. If it still fails, a git process remove the file manually to continue¡­ 
-rm -f .git/index.lock // É¾³ıindex.lockÎÄ¼ş
+    document.getElementsByTagName('body')[0].style.background='#cce8cc';x=document.getElementsByTagName('div');for(var i=0;i<x.length;i++){x[i].style.background='#cce8cc'}
 
-
-
-Chrome »¤ÑÛÃüÁî
-document.getElementsByTagName('body')[0].style.background='#cce8cc';x=document.getElementsByTagName('div');for(var i=0;i<x.length;i++){x[i].style.background='#cce8cc'}
+    ```
