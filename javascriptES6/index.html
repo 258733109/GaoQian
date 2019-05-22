@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+<script>
+    'use strict';
+    (window).foo = () => TEST();
+    Object.print = function (o) { console.log(o) };
+    var twoSum = function(nums, target) {
+        var kvMap = new Map();
+        for (var i = 0; i < nums.length;i++ ) {
+            const tmp = target - nums[i];
+            if(kvMap.has(tmp)){
+               return [kvMap.get(tmp),i];
+            }
+            kvMap.set(nums[i],i);
+        }
+        return [];
+    };
+    function TEST() {
+        const tmp = twoSum([2, 7, 11, 15],9);
+    }
+</script>
+
+</body>
+</html>
