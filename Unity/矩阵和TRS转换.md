@@ -1,4 +1,4 @@
-# **#从矩阵中得到TRS**
+# **从矩阵中得到TRS**
 
 ```
 public static Quaternion GetRotation(this Matrix4x4 matrix)
@@ -31,6 +31,4 @@ public static Vector3 GetScale(this Matrix4x4 m)
 
     return new Vector3(x, y, z);
 }
-
 ```
-
