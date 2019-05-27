@@ -21,15 +21,13 @@
     1、git log WallHide.ts  
     2、git checkout 6530c1358d1a0b66e9f5cf6106873431ddcec6c9 WallHide.ts
 
-**+ git错误处理**
++ **git错误处理**
 
-    + Git操作的过程中突然显示Another git process semms to be running in this repository, e.g. an editor opened by ‘git commit’. Please make sure all processes are terminated then try again. If it still fails, a git process remove the file manually to continue…
+Git操作的过程中突然显示Another git process semms to be running in this repository, e.g. an editor opened by ‘git commit’. Please make sure all processes are terminated then try again. If it still fails, a git process remove the file manually to continue…
     rm -f .git/index.lock // 删除index.lock文件
 
 + Chrome 护眼命令
 
-    ```
-
-    document.getElementsByTagName('body')[0].style.background='#cce8cc';x=document.getElementsByTagName('div');for(var i=0;i<x.length;i++){x[i].style.background='#cce8cc'}
-
-    ```
+```
+document.getElementsByTagName('body')[0].style.background='#cce8cc';x=document.getElementsByTagName('div');for(var i=0;i<x.length;i++){x[i].style.background='#cce8cc'}
+```
