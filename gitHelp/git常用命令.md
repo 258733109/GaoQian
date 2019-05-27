@@ -10,7 +10,7 @@
 + git merge --no-ff mater 合并master
 + git reflog --date=local | grep feature/cornerMerge@lianbo 查看当前分支是从哪个分支分出来的
 
-+ git push origin --delete <BranchName>  删除本地分支
++ git push origin --delete _BranchName_  删除本地分支
 + git checkout -b develop origni/develop 检出远程分支到本地
 
 + git stash save "" 储存
